@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.btn {
+    
+    background-image: linear-gradient(#f8763e,#f8425c);
+    border: none;
+    box-shadow: 0 .8rem 3rem rgba(255, 67, 34, 0.5)!important;
+    transition: .4s ease-in;
+}
+.btn:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    background-color: white !important;
+    border: tomato solid 2px;
+    color: tomato;
+}
+.btn:hover{
+    box-shadow: none !important;
+    background-image: none !important;
+    background-color: white !important;
+    border: 1px solid tomato;
+    color: tomato;
+}
+.btn-primary{
+    background-color: white;
+}
+
+.border-right{
+    border-right: 1px solid #DCDCDC;
+    border-left: 1px solid #DCDCDC;
+
+}
+
+input:focus{
+    outline: none !important;
+}
+
+.imageSecond{
+    background-image: url("https://images.unsplash.com/photo-1633511664699-f99f5171200a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1932&q=80");
+    background-size: cover;
+}
+
+.imageFirst{
+    background-image: url("https://images.unsplash.com/photo-1633506157576-c9f1b074d5f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+    background-size: cover;
+}
+
+.stillCardImage{
+    background-image: url("https://images.unsplash.com/photo-1633506157576-c9f1b074d5f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+    background-size: cover;
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .imgHero{
+        transform: translateX(0%) !important;
+        transform: translateY(-28%) !important;
+        height: 35vh;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .card{
+        width: 100% !important;
+        height: 60% !important;
+    }
+    .buttonCard{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .imgSec{
+        height: 15% !important;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .imgHero{
+        transform: translateX(0%) !important;
+        transform: translateY(-28%) !important;
+        height: 35vh;
+    }
+    .card{
+        width: 100% !important;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .imgHero{
+        height: 30vh;
+        justify-content: center;
+    }
+    .card{
+        width: 100% !important;
+    }
+ }
